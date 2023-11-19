@@ -17,5 +17,10 @@ a {
 
 body button {
 border: none;
+background: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 

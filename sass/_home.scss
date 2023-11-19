@@ -1,7 +1,6 @@
 .navbar__logo {
   display: flex;
   gap: 16px;
-  align-items: center;
   h1 {
     color: $primary-color;
     font-size: 30px;
@@ -22,10 +21,10 @@ header {
 }
 
 .dark header {
- background-color: black;
+  background-color: black;
 }
 .dark header * {
-  color: rgb(201, 195, 195)!important;
+  color: rgb(201, 195, 195) !important;
 }
 
 .dark #navbar-open svg {
@@ -67,8 +66,8 @@ header {
     border: 1px solid #bcd0e5;
     background-color: $white;
     @media (max-width: 500px) {
+      font-size: 10px;
       padding: 5px 8px;
-      margin-right: 5px;
     }
   }
   .nav__btn-2 {
@@ -77,15 +76,8 @@ header {
     border: none;
     background-color: $primary-color;
     @media (max-width: 500px) {
+      font-size: 10px;
       padding: 5px 8px;
-    }
-    @media (max-width: 500px) {
-      .nav__list {
-        gap: 5px;
-      }
-      .product__button {
-        display: inline-block;
-      }
     }
   }
 }
@@ -105,7 +97,7 @@ header {
   position: fixed;
   bottom: 0;
   top: 0;
-  left: -100%;
+  left: calc(-100% - 50px);
   background-color: grey;
   display: flex;
   gap: 20px;
@@ -116,7 +108,7 @@ header {
 
   .navbar__items {
     text-align: center;
-    width: 200px;
+    width: calc(100vw - 50px);
     margin-left: 25px;
     margin-right: 25px;
     padding: 15px 20px;
@@ -134,7 +126,7 @@ header {
     padding: 10px 15px;
   }
   img:hover {
-    background-color: rgb(221, 123, 4) v;
+    background-color: rgb(221, 123, 4);
     border-radius: 20px;
     transition: 0.5s;
   }
@@ -160,4 +152,17 @@ nav {
   .navbar__logo #navbar-open {
     display: inline-block !important;
   }
+}
+
+#backtop {
+  position: fixed;
+  bottom: 25px;
+  right: -50px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+}
+#backtop.backtop-show {
+  right: 0;
+  transition: 0.9s;
 }

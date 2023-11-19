@@ -3,7 +3,7 @@ function openNavbar() {
     // document.getElementById("navbar-responsive").style.top = "0";
   }
   function closeNavbar() {
-    document.getElementById("navbar-responsive").style.left = "-100%";
+    document.getElementById("navbar-responsive").style.left = "calc(-100% - 50px)";
     // document.getElementById("navbar-responsive").style.top = "-100%";
   }
   
