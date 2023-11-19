@@ -236,9 +236,9 @@ nav {
 }
 
 #backtop.backtop-show {
-  right: 0;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
+  right: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .product {
