@@ -1,5 +1,6 @@
 .navbar__logo {
   display: flex;
+  align-items: center;
   gap: 16px;
   h1 {
     color: $primary-color;
@@ -18,29 +19,16 @@ header {
   background-color: $white;
   padding-top: 19px;
   padding-bottom: 24px;
+  z-index: 2;
 }
 
-.dark header {
-  background-color: black;
-}
-.dark header * {
-  color: rgb(201, 195, 195) !important;
-}
 
-.dark #navbar-open svg {
-  fill: white;
-}
 
 .nav__list {
   display: flex;
   align-items: center;
   gap: 25px;
 
-  .dark__light {
-    background: transparent;
-    border: none;
-    width: 30px;
-  }
   img {
     width: 35px;
   }
@@ -59,13 +47,16 @@ header {
     font-weight: 600;
     line-height: normal;
     border-radius: 4px;
+    @media (max-width: 340px) {
+      display: none;
+    }
   }
   .nav__btn-1 {
     color: $button-color;
     padding: 10px 22px;
     border: 1px solid #bcd0e5;
     background-color: $white;
-    @media (max-width: 500px) {
+    @media (max-width: 570px) {
       font-size: 10px;
       padding: 5px 8px;
     }
@@ -75,7 +66,7 @@ header {
     padding: 12px 22px;
     border: none;
     background-color: $primary-color;
-    @media (max-width: 500px) {
+    @media (max-width: 570px) {
       font-size: 10px;
       padding: 5px 8px;
     }

@@ -1,0 +1,82 @@
+#content {
+  padding-top: 150px;
+  h2 {
+    color: $secondary-color;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  h5 {
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+  .disabled {
+    opacity: 1;
+  }
+  .owl-next,
+  .owl-prev {
+    position: absolute;
+    top: 170px;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: $secondary-color;
+  }
+  .owl-next {
+    right: -24px;
+  }
+  .owl-prev {
+    left: -24px;
+  }
+  .owl-dot span {
+    width: 30px;
+    height: 12px;
+    transition: all 1s;
+  }
+  .owl-dot.active span {
+    background-color: $secondary-color;
+    width: 40px;
+  }
+}
+
+.content {
+  p {
+    color: $secondary-color;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  h4 {
+    max-width: 294px;
+    color: $secondary-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  &__card {
+    border-radius: 8px;
+    background: $white;
+    border: 1px solid rgb(168, 166, 166);
+    max-width: 348px;
+    
+
+    h4 {
+      margin: 12px 24px 40px 24px;
+    }
+    p {
+      padding: 24px 0 0 24px;
+    }
+    @media (max-width: 1030px) {
+      display: grid;
+      grid-template-columns: repeat();
+    }
+  }
+  &__card:hover {
+    h4 {
+      color: $primary-color;
+      transition: 1s;
+    }
+  }
+}

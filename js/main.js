@@ -57,3 +57,31 @@ modeBtn.addEventListener("click", function () {
   }
   document.body.classList.toggle("dark");
 });
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    margin: 32,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: false,
+    loop: true,
+    navText: ["<img src='images/left.svg'/>", "<img src='images/right.svg'/>"],
+    items: 2,
+    responsive: {
+      0: {
+        items: 1,
+        dots: false,
+      },
+      600: {
+        items: 2,
+        
+      },
+      860: {
+        items: 3,
+      }
+    }
+  }
+  );
+});

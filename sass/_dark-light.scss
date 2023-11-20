@@ -1,0 +1,42 @@
+.dark header, .dark #method {
+    background: linear-gradient(black, rgb(6, 1, 19));
+    transition: 1s;
+  }
+  .dark header * {
+    color: rgb(201, 195, 195) !important;
+  }
+
+  .dark #navbar-open svg {
+    fill: white;
+  }
+
+  .dark__light {
+    background: transparent;
+    border: none;
+    width: 30px;
+  }
+
+  .dark #product, .dark #test, .dark #customer, .dark #content, .dark #pricing, .dark #screen, .dark #resource, .dark footer {
+    background: $dark-light;
+    transition: 1s;
+  }
+  .dark #product *, .dark #test *, .dark #method *, .dark #customer *, .dark #content *, .dark #pricing *, .dark #screen *, .dark footer .contact *, .dark footer p, .dark #resource *{
+    color: $white;
+    transition: 1s;
+  }
+  .dark .customer__row p, .dark .content__card {
+    background-color: Grey;
+  }
+
+  .dark #backtop svg {
+    fill: white;
+  }
+ .dark .pricing__row__card, .dark .resource__row, .dark .screen__container {
+    background-color: rgb(60, 59, 59);
+ }
+ .dark .pricing__row__card button {
+    background-color: $primary-color;
+ }
+ .dark .pricing__row__card:hover button, .dark .screen__container button {
+    color: $primary-color !important;
+ }
