@@ -991,6 +991,9 @@ footer {
 footer .contact__logo {
   margin-bottom: 24px;
 }
+footer p {
+  text-align: center;
+}
 
 .contact {
   display: grid;
