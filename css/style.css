@@ -228,6 +228,7 @@ header {
           justify-content: center;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  z-index: 2;
 }
 #navbar-responsive .navbar__items {
   text-align: center;
@@ -598,6 +599,18 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 300px) {
+  .customer__row__content {
+    justify-items: center;
+  }
+  .customer__row__content__content img {
+    max-width: 80px;
+    width: 100%;
+  }
 }
 @media (max-width: 900px) {
   .customer__row {
@@ -614,6 +627,11 @@ nav {
   background: #fff;
   -webkit-box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
           box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
+}
+@media (max-width: 300px) {
+  .customer__row p {
+    padding: 9px 15px;
+  }
 }
 .customer__row__content {
   display: -webkit-box;
@@ -990,12 +1008,21 @@ footer .contact__logo {
 }
 @media (max-width: 510px) {
   .contact {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
     justify-items: center;
     text-align: justify;
+    gap: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .contact {
+    grid-template-columns: 1fr;
   }
   .contact__part2 {
-    margin-left: -50px;
+    margin-left: -70px;
+  }
+  .contact__part3 {
+    margin-left: -30px;
   }
 }
 .contact__part__items1 {
@@ -1025,8 +1052,15 @@ footer .contact__logo {
   font-weight: 500;
   line-height: 30px;
 }
+@media (max-width: 600px) {
+  .contact__part4 h3 {
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
 .contact__part4 input {
   max-width: 325px;
+  width: 100%;
   padding: 10px 0 10px 15px;
   outline: none;
   border: none;
@@ -1034,6 +1068,12 @@ footer .contact__logo {
   margin-top: 34px;
   border-radius: 4px;
   border: 1px solid #bcd0e5;
+}
+@media (max-width: 500px) {
+  .contact__part4 input {
+    padding: 5px 10px;
+    margin-top: 15px;
+  }
 }
 .contact__part4 button {
   max-width: 325px;
@@ -1045,8 +1085,12 @@ footer .contact__logo {
   border-radius: 4px;
   max-width: 131px;
 }
-
-p {
+@media (max-width: 600px) {
+  .contact__part4 button {
+    font-size: 10px;
+  }
+}
+.contact p {
   max-width: 394px;
   text-align: center;
   color: #22343d;
